@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Calculator Assessment</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_selectTip">Select Tip</string>
+    <string name="title_activity_selectNbPeople">Select Number of People</string>
+    <string name="billAmount">Bill Amount</string>
+    <string name="calculateTip">Calculate Tip</string>
+    <string name="tipAmount">Tip Amount</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="save">Save</string>
+    <string name="tipPercentage">Tip Percentage</string>
+    <string name="percentSymbol">%</string>
+    <string name="changeTipButton">Change Tip</string>
+    <string name="nbPeople">Number of people</string>
+    <string name="number">Number</string>
+    <string name="changeNbPeople">Change Nbr</string>
+    <string name="totalByPerson">Total per person</string>
+</resources>

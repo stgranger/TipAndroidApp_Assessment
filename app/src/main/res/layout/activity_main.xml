@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/billAmtEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="right|center_vertical"
+        android:hint="@string/billAmount"
+        android:inputType="number|numberSigned|numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/changeTipButton"
+        android:id="@+id/changeTipButton"
+        android:layout_alignTop="@+id/tipPercentageView"
+        android:layout_alignLeft="@+id/calcTipButton"
+        android:layout_alignBaseline="@+id/tipPercentageView" />
+
+    <TextView
+        android:id="@+id/tipPercentageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipPercentage"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/billAmtEditText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tipPctView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipPercentageView"
+        android:layout_alignBottom="@+id/tipPercentageView"
+        android:layout_alignRight="@+id/billAmtEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/numberOfPeopleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nbPeople"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/changeTipButton"
+        android:layout_alignLeft="@+id/TotalByPersonView"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:id="@+id/nbOfPpleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="right|center_vertical"
+        android:hint="@string/number"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:width="130dp"
+        android:textIsSelectable="true"
+        android:layout_alignRight="@+id/calcTipButton"
+        android:layout_alignBaseline="@+id/numberOfPeopleView" />
+
+    <Button
+        android:id="@+id/calcTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateTip"
+        style="@android:style/ButtonBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nbPeopleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipAmount"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/calcTipButton"
+        android:layout_alignLeft="@+id/billAmtEditText" />
+
+    <TextView
+        android:id="@+id/tipAmtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nbPeopleView"
+        android:layout_alignBottom="@+id/nbPeopleView"
+        android:layout_alignRight="@+id/billAmtEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TotalAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalAmount"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/nbPeopleView"
+        android:layout_alignRight="@+id/nbPeopleView" />
+
+    <TextView
+        android:id="@+id/totalAmtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TotalAmountView"
+        android:layout_alignBottom="@+id/TotalAmountView"
+        android:layout_alignRight="@+id/tipAmtView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TotalByPersonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalByPerson"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/TotalAmountView"
+        android:layout_alignRight="@+id/TotalAmountView" />
+
+    <TextView
+        android:id="@+id/totalAmtByPersonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBaseline="@+id/TotalByPersonView"
+        android:layout_alignRight="@+id/totalAmtView"
+        android:layout_alignBottom="@+id/TotalByPersonView" />
+
+</RelativeLayout>
